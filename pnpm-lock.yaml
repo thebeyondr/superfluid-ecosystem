@@ -1,6 +1,12 @@
 lockfileVersion: '6.0'
 
 dependencies:
+  '@fontsource/dm-serif-text':
+    specifier: ^5.0.8
+    version: 5.0.8
+  '@fontsource/lato':
+    specifier: ^5.0.8
+    version: 5.0.8
   '@types/node':
     specifier: 20.4.8
     version: 20.4.8
@@ -110,6 +116,14 @@ packages:
   /@eslint/js@8.46.0:
     resolution: {integrity: sha512-a8TLtmPi8xzPkCbp/OGFUo5yhRkHM2Ko9kOWP4znJr0WAhWyThaw3PnwX4vOTWOAMsV2uRt32PPDcEz63esSaA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    dev: false
+
+  /@fontsource/dm-serif-text@5.0.8:
+    resolution: {integrity: sha512-2qzevg/6bIP0o7f/w2Me/bvp0n+uANH/uuz+FVKjpfBFldEufGkN3nHk/8TppG1sjfgQk76KJAOIZbOUfJxsAA==}
+    dev: false
+
+  /@fontsource/lato@5.0.8:
+    resolution: {integrity: sha512-a4XnSIbiISLf0UFflBJ4H4HErH2xvQO99hOm9an7ljBY7cUruaEIMHmqOraPPS8alYikkmMEOOksdulDFyLfFg==}
     dev: false
 
   /@humanwhocodes/config-array@0.11.10:
