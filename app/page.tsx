@@ -1,3 +1,4 @@
+import SuperfluidCheckout from "@/components/superfluid-checkout/SuperfluidCheckout";
 import Link from "next/link";
 
 export default function Home() {
@@ -28,6 +29,7 @@ export default function Home() {
             <div className="p-6 flex flex-col items-center justify-center w-full bg-stone-800 hover:bg-stone-600 transition">
                 Donate
             </div>
+            <SuperfluidCheckout />
         </main>
     );
 }
