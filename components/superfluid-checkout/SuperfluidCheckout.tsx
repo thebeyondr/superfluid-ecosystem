@@ -13,6 +13,7 @@ import SuperfluidWidget, {
 } from "@superfluid-finance/widget";
 import superTokenList from "@superfluid-finance/tokenlist";
 import { useMemo } from "react";
+import ActionItem, { ActionItemProps } from "../ActionItem";
 
 const projectId = "7648cbccc7d7417fcbe198a6ed627c1b";
 const { publicClient } = configureChains(supportedNetworks, [
@@ -30,6 +31,7 @@ const ethereumClient = new EthereumClient(wagmiConfig, supportedNetworks);
 
 const SuperfluidCheckout = () => {
     const { open, isOpen } = useWeb3Modal();
+
     const walletManager = useMemo(
         () => ({
             open,
@@ -46,6 +48,15 @@ const SuperfluidCheckout = () => {
         }),
         []
     );
+
+    const donateInfo: ActionItemProps = {
+        title: "Donate to us",
+        description: "Support Hunter's Workshop in making more tools",
+        graphic: "hw-logo.svg",
+        icon: "",
+        id: "donate",
+    };
+
     return (
         <>
             <WagmiConfig config={wagmiConfig}>
@@ -57,9 +68,11 @@ const SuperfluidCheckout = () => {
                     eventListeners={eventListeners}
                 >
                     {({ openModal }) => (
-                        <button onClick={() => openModal()}>
-                            Open Superfluid Widget
-                        </button>
+                        <ActionItem
+                            key={donateInfo.id}
+                            {...donateInfo}
+                            clickHandler={openModal}
+                        />
                     )}
                 </SuperfluidWidget>
             </WagmiConfig>
