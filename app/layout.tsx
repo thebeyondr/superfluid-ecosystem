@@ -18,13 +18,13 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en" suppressHydrationWarning>
-            <body className="min-h-screen">
-                <nav className="p-2">
-                    <p className="text-xs text-stone-50 tracking-wide leading-[15.12px] uppercase font-bold">
-                        Hunter&apos;s <br /> Workshop
-                    </p>
-                </nav>
+            <body className="min-h-screen bg-astryd-mobile md:bg-astryd-desktop bg-cover bg-bottom-left bg-no-repeat">
                 <ThemeProvider attribute="class" defaultTheme="dark">
+                    <nav className="p-2">
+                        <p className="text-xs text-stone-50 tracking-wide leading-[15.12px] uppercase font-bold">
+                            Hunter&apos;s <br /> Workshop
+                        </p>
+                    </nav>
                     {children}
                 </ThemeProvider>
             </body>

@@ -75,6 +75,12 @@ const config: Config = {
                 "accordion-down": "accordion-down 0.2s ease-out",
                 "accordion-up": "accordion-up 0.2s ease-out",
             },
+            backgroundImage: {
+                "astryd-desktop":
+                    'url("/assets/backgrounds/astryd_desktop.webp")',
+                "astryd-mobile":
+                    'url("/assets/backgrounds/astryd_mobile.webp")',
+            },
         },
     },
     plugins: [require("tailwindcss-animate")],
