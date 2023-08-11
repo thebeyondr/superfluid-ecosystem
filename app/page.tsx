@@ -25,15 +25,16 @@ export default function Home() {
     ];
     return (
         <main className="min-h-full">
-            <div className="bg-stone-800/80 backdrop-blur-sm px-3 py-4 flex flex-col space-y-2 absolute bottom-0 h-max rounded-t-lg">
+            <div className="bg-stone-900/70 backdrop-blur-md px-3 py-4 flex flex-col space-y-2 absolute bottom-0 h-max rounded-t-lg">
                 <h1 className="text-stone-50 text-4xl font-normal">Astryd</h1>
                 <p className="text-sm text-stone-50/70 font-medium">
                     Supertoken Merchant
                 </p>
-                <blockquote className="text-sm text-stone-50 font-medium">
+                <blockquote className="text-base text-stone-50 font-medium">
                     “Hey there, looking to make a supertoken or give us a
                     donation to fund the workshop’s efforts?”
                 </blockquote>
+                <div className="p-1"></div>
                 {actionItems.map((item) => (
                     <ActionItem key={item.id} {...item} />
                 ))}
