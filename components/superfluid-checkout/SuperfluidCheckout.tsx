@@ -61,6 +61,24 @@ const SuperfluidCheckout = () => {
             <WagmiConfig config={wagmiConfig}>
                 <SuperfluidWidget
                     {...data}
+                    paymentDetails={{
+                        paymentOptions: [
+                            {
+                                receiverAddress:
+                                    "0xf26ce9749f29e61c25d0333bce2301cb2dfd3a22",
+                                chainId: 137,
+                                superToken: {
+                                    address:
+                                        "0xcaa7349cea390f89641fe306d93591f87595dc1f",
+                                },
+                            },
+                        ],
+                    }}
+                    theme={{
+                        palette: {
+                            mode: "dark",
+                        },
+                    }}
                     tokenList={superTokenList}
                     type="dialog"
                     walletManager={walletManager}
