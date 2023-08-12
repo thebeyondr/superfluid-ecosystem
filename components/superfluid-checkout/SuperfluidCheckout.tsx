@@ -51,7 +51,7 @@ const SuperfluidCheckout = () => {
 
     const donateInfo: ActionItemProps = {
         title: "Donate to us",
-        description: "Support Hunter's Workshop in making more tools",
+        description: "Support Hunters Workshop in making more tools",
         graphic: "hw-logo.svg",
         id: "donate",
     };

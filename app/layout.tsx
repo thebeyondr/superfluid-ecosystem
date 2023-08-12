@@ -8,7 +8,7 @@ import "@fontsource/lato/700.css";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-    title: "Superfluid Ecosystem - Hunter's Workshop",
+    title: "Superfluid Ecosystem - Hunters Workshop",
     description: "Tools you can use to interact with Superfluid.",
 };
 
@@ -25,7 +25,7 @@ export default function RootLayout({
                         <div className="h-10 w-10 lg:h-14 lg:w-14 relative">
                             <Image
                                 src={"/assets/graphics/hw-logo-white.svg"}
-                                alt="Hunter's Workshop Logo"
+                                alt="Hunters Workshop Logo"
                                 fill
                             />
                         </div>
