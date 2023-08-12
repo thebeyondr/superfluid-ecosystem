@@ -1,6 +1,6 @@
 import ActionItem, { ActionItemProps } from "@/components/ActionItem";
 import SuperfluidCheckout from "@/components/superfluid-checkout/SuperfluidCheckout";
-
+import * as motion from "@/lib/motion";
 
 export default function Home() {
     const actionItems: ActionItemProps[] = [
@@ -21,7 +21,19 @@ export default function Home() {
     ];
     return (
         <main className="min-h-full lg:flex lg:justify-end lg:pr-20 lg:pt-20 xl:pr-52 xl:pt-40">
-            <div className="bg-stone-900/70 backdrop-blur-md px-3 lg:px-4 py-4 flex flex-col space-y-2 md:space-y-3 absolute bottom-0 lg:relative h-max rounded-t-lg lg:rounded-b-lg w-full lg:w-[438px]">
+            <motion.div
+                initial={{ y: 24, opacity: 0 }}
+                animate={{
+                    y: 0,
+                    opacity: 1,
+                    transition: {
+                        delay: 0.4,
+                        duration: 1.2,
+                        ease: "easeOut",
+                    },
+                }}
+                className="bg-stone-900/70 backdrop-blur-md px-3 lg:px-4 py-4 flex flex-col space-y-2 md:space-y-3 absolute bottom-0 lg:relative h-max rounded-t-lg lg:rounded-b-lg w-full lg:w-[438px]"
+            >
                 <h1 className="text-stone-50 text-4xl font-normal">Astryd</h1>
                 <p className="text-xs text-stone-50/80 font-medium uppercase tracking-wider">
                     Superfluid Token Merchant
@@ -35,7 +47,7 @@ export default function Home() {
                     <ActionItem key={item.id} {...item} />
                 ))}
                 <SuperfluidCheckout />
-            </div>
+            </motion.div>
         </main>
     );
 }
