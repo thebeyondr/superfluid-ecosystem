@@ -20,7 +20,7 @@ export default function Home() {
         },
     ];
     return (
-        <main className="min-h-full lg:flex lg:justify-end lg:pr-20 lg:pt-20 xl:pr-52 xl:pt-40">
+        <main className="md:p-6 lg:pr-20 xl:pr-56 flex-1 flex flex-col justify-end items-center md:justify-center md:items-end relative">
             <motion.div
                 initial={{ y: 24, opacity: 0 }}
                 animate={{
@@ -32,7 +32,7 @@ export default function Home() {
                         ease: "easeOut",
                     },
                 }}
-                className="bg-stone-900/70 backdrop-blur-md px-3 lg:px-4 py-4 flex flex-col space-y-2 md:space-y-3 absolute bottom-0 lg:relative h-max rounded-t-lg lg:rounded-b-lg w-full lg:w-[438px]"
+                className="bg-stone-900/70 backdrop-blur-md px-3 lg:px-4 py-4 flex flex-col space-y-2 md:space-y-3 h-max rounded-t-lg lg:rounded-b-lg w-full md:w-[438px] justify-end"
             >
                 <h1 className="text-stone-50 text-4xl font-normal">Astryd</h1>
                 <p className="text-xs text-stone-50/80 font-medium uppercase tracking-wider">
