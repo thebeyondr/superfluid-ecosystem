@@ -53,7 +53,6 @@ const SuperfluidCheckout = () => {
         title: "Donate to us",
         description: "Support Hunter's Workshop in making more tools",
         graphic: "hw-logo.svg",
-        icon: "",
         id: "donate",
     };
 
