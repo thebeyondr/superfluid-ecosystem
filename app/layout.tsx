@@ -6,18 +6,19 @@ import "@fontsource/dm-serif-text";
 import "@fontsource/lato/400.css";
 import "@fontsource/lato/700.css";
 import Image from "next/image";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-    title: "Superfluid Ecosystem - Hunters Workshop",
-    description: "Tools you can use to interact with Superfluid.",
-    metadataBase: new URL("https://superfluid-ecosystem.vercel.app"), // TODO: Change for prod
+    title: siteConfig.title,
+    description: siteConfig.description,
+    metadataBase: siteConfig.url,
     openGraph: {
-        title: "Superfluid Ecosystem - Hunters Workshop",
-        siteName: "Superfluid Ecosystem - Hunters Workshop",
-        description: "Tools you can use to interact with Superfluid.",
+        title: siteConfig.title,
+        siteName: siteConfig.title,
+        description: siteConfig.description,
         locale: "en_US",
         type: "website",
-        url: "https://superfluid-ecosystem.vercel.app", // TODO: Change for prod
+        url: siteConfig.url,
     },
 };
 
