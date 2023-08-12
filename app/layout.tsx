@@ -11,6 +11,14 @@ export const metadata: Metadata = {
     title: "Superfluid Ecosystem - Hunters Workshop",
     description: "Tools you can use to interact with Superfluid.",
     metadataBase: new URL("https://superfluid-ecosystem.vercel.app"), // TODO: Change for prod
+    openGraph: {
+        title: "Superfluid Ecosystem - Hunters Workshop",
+        siteName: "Superfluid Ecosystem - Hunters Workshop",
+        description: "Tools you can use to interact with Superfluid.",
+        locale: "en_US",
+        type: "website",
+        url: "https://superfluid-ecosystem.vercel.app", // TODO: Change for prod
+    },
 };
 
 export default function RootLayout({
