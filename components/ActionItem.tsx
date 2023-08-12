@@ -22,7 +22,7 @@ const ActionItem = ({
     clickHandler,
 }: ActionItemProps) => (
     <Wrapper link={link} clickHandler={clickHandler}>
-        <div className="flex items-center justify-start w-full px-3 py-5 space-x-4 rounded-xl bg-stone-950/60 transition ring-1 ring-stone-600 hover:ring-orange-300 active:ring-orange-300 focus:ring-orange-200">
+        <div className="flex items-center justify-start w-full px-3 py-5 space-x-4 rounded-xl bg-stone-950/60 transition ring-1 ring-stone-600 hover:ring-orange-300 hover:translate-x-1 active:ring-orange-300 focus:ring-orange-200">
             <div className="w-10 h-10 md:h-14 md:w-14 relative">
                 <Image
                     src={`/assets/graphics/${graphic}`}
