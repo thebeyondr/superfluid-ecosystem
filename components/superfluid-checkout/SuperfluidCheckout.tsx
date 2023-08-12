@@ -75,8 +75,16 @@ const SuperfluidCheckout = () => {
                         ],
                     }}
                     theme={{
+                        ...data.theme,
                         palette: {
                             mode: "dark",
+                            primary: {
+                                main: "#EA8A0C",
+                                contrastText: "#fff",
+                            },
+                            secondary: {
+                                main: "#fff",
+                            },
                         },
                     }}
                     tokenList={superTokenList}
