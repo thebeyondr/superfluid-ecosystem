@@ -5,6 +5,7 @@ import "@fontsource/lato/300.css";
 import "@fontsource/dm-serif-text";
 import "@fontsource/lato/400.css";
 import "@fontsource/lato/700.css";
+import Image from "next/image";
 
 export const metadata: Metadata = {
     title: "Superfluid Ecosystem - Hunter's Workshop",
@@ -18,10 +19,17 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en" suppressHydrationWarning>
-            <body className="min-h-screen bg-astryd-mobile md:bg-astryd-desktop bg-cover bg-top-right bg-no-repeat">
+            <body className="min-h-screen bg-astryd-mobile md:bg-astryd-desktop bg-cover bg-top-right md:bg-center bg-no-repeat">
                 <ThemeProvider attribute="class" defaultTheme="dark">
-                    <nav className="p-2">
-                        <p className="text-xs text-stone-50 tracking-wide leading-[15.12px] uppercase font-bold">
+                    <nav className="p-6 lg:p-12 flex space-x-2 lg:space-x-3 items-center">
+                        <div className="h-10 w-10 lg:h-14 lg:w-14 relative">
+                            <Image
+                                src={"/assets/graphics/hw-logo-white.svg"}
+                                alt="Hunter's Workshop Logo"
+                                fill
+                            />
+                        </div>
+                        <p className="text-xs lg:text-sm text-stone-50 tracking-wider leading-[15.12px] lg:leading-tight uppercase font-bold">
                             Hunter&apos;s <br /> Workshop
                         </p>
                     </nav>

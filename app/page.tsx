@@ -1,36 +1,32 @@
 import ActionItem, { ActionItemProps } from "@/components/ActionItem";
 import SuperfluidCheckout from "@/components/superfluid-checkout/SuperfluidCheckout";
-import Image from "next/image";
-import Link from "next/link";
+
 
 export default function Home() {
     const actionItems: ActionItemProps[] = [
         {
             title: "Wrap token",
-            description:
-                "Wrap an existing ERC20 into a supertoken with Superfluid",
+            description: "Wrap an existing ERC20 into a supertoken.",
             link: "https://deploy-supertoken-deployment.vercel.app/",
             graphic: "wrap-st.png",
-            icon: "",
             id: "wrap",
         },
         {
             title: "Spawn pure token",
-            description: "Start a supertoken from scratch on Superfluid",
+            description: "Start a supertoken from scratch.",
             link: "https://supertoken-wizard.huntersworkshop.xyz/",
             graphic: "new-st.png",
-            icon: "",
             id: "spawn",
         },
     ];
     return (
-        <main className="min-h-full">
-            <div className="bg-stone-900/70 backdrop-blur-md px-3 py-4 flex flex-col space-y-2 absolute bottom-0 h-max rounded-t-lg">
+        <main className="min-h-full lg:flex lg:justify-end lg:pr-20 lg:pt-20 xl:pr-52 xl:pt-40">
+            <div className="bg-stone-900/70 backdrop-blur-md px-3 lg:px-4 py-4 flex flex-col space-y-2 md:space-y-3 absolute bottom-0 lg:relative h-max rounded-t-lg lg:rounded-b-lg w-full lg:w-[438px]">
                 <h1 className="text-stone-50 text-4xl font-normal">Astryd</h1>
-                <p className="text-sm text-stone-50/70 font-medium">
-                    Supertoken Merchant
+                <p className="text-xs text-stone-50/80 font-medium uppercase tracking-wider">
+                    Superfluid Token Merchant
                 </p>
-                <blockquote className="text-base text-stone-50 font-medium">
+                <blockquote className="text-sm text-stone-50 font-medium">
                     “Hey there, looking to make a supertoken or give us a
                     donation to fund the workshop’s efforts?”
                 </blockquote>
