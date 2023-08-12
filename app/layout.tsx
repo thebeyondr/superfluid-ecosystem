@@ -10,6 +10,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
     title: "Superfluid Ecosystem - Hunters Workshop",
     description: "Tools you can use to interact with Superfluid.",
+    metadataBase: new URL("https://superfluid-ecosystem.vercel.app"), // TODO: Change for prod
 };
 
 export default function RootLayout({
