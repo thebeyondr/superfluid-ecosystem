@@ -29,9 +29,9 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en" suppressHydrationWarning>
-            <body className="min-h-screen flex flex-col bg-astryd-mobile md:bg-astryd-desktop bg-cover bg-top-right md:bg-center bg-no-repeat">
+            <body className="h-screen flex flex-col bg-astryd-mobile md:bg-astryd-desktop bg-cover bg-top-right md:bg-center bg-no-repeat">
                 <ThemeProvider attribute="class" defaultTheme="dark">
-                    <div className="min-h-screen flex flex-col overflow-hidden">
+                    <div className="h-screen flex flex-col overflow-hidden">
                         <header className="p-6 lg:p-12 flex space-x-2 lg:space-x-3 items-center">
                             <div className="h-10 w-10 lg:h-14 lg:w-14 relative">
                                 <Image
