@@ -21,33 +21,37 @@ export default function Home() {
     ];
     return (
         <main className="md:p-6 lg:pr-20 xl:pr-56 flex-1 flex flex-col justify-end items-center md:justify-center md:items-end relative">
-            <motion.div
-                initial={{ y: 24, opacity: 0 }}
-                animate={{
-                    y: 0,
-                    opacity: 1,
-                    transition: {
-                        delay: 0.4,
-                        duration: 1.2,
-                        ease: "easeOut",
-                    },
-                }}
-                className="bg-stone-900/70 backdrop-blur-md px-3 lg:px-4 py-4 flex flex-col space-y-2 md:space-y-3 h-max rounded-t-lg lg:rounded-b-lg w-full md:w-[438px] justify-end"
-            >
-                <h1 className="text-stone-50 text-4xl font-normal">Astryd</h1>
-                <p className="text-xs text-stone-50/80 font-medium uppercase tracking-wider">
-                    Superfluid Token Merchant
-                </p>
-                <blockquote className="text-sm text-stone-50 font-medium">
-                    “Hey there, looking to make a supertoken or give us a
-                    donation to fund the workshop’s efforts?”
-                </blockquote>
-                <div className="p-1"></div>
-                {actionItems.map((item) => (
-                    <ActionItem key={item.id} {...item} />
-                ))}
-                <SuperfluidCheckout />
-            </motion.div>
+            <div className="min-h-max overflow-hidden">
+                <motion.div
+                    initial={{ y: 16, opacity: 0 }}
+                    animate={{
+                        y: 0,
+                        opacity: 1,
+                        transition: {
+                            delay: 0.1,
+                            duration: 0.8,
+                            ease: "easeInOut",
+                        },
+                    }}
+                    className="bg-stone-900/70 backdrop-blur-md px-3 lg:px-4 py-4 flex flex-col space-y-2 md:space-y-3 h-max rounded-t-lg lg:rounded-b-lg w-full md:w-[438px] justify-end"
+                >
+                    <h1 className="text-stone-50 text-4xl font-normal">
+                        Astryd
+                    </h1>
+                    <p className="text-xs text-stone-50/80 font-medium uppercase tracking-wider">
+                        Superfluid Token Merchant
+                    </p>
+                    <blockquote className="text-sm text-stone-50 font-medium">
+                        “Hey there, looking to make a supertoken or give us a
+                        donation to fund the workshop’s efforts?”
+                    </blockquote>
+                    <div className="p-1"></div>
+                    {actionItems.map((item) => (
+                        <ActionItem key={item.id} {...item} />
+                    ))}
+                    <SuperfluidCheckout />
+                </motion.div>
+            </div>
         </main>
     );
 }
