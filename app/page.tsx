@@ -18,6 +18,13 @@ export default function Home() {
             graphic: "new-st.png",
             id: "spawn",
         },
+        {
+            title: "Invest your tokens",
+            description: "Invest your tokens on Ricochet Exchange.",
+            link: "https://ricochet-exchange.eth.limo/",
+            graphic: "invest-st.png",
+            id: "invest",
+        },
     ];
     return (
         <main className="md:p-6 lg:pr-20 xl:pr-56 flex-1 flex flex-col justify-end items-center md:justify-center md:items-end relative">
@@ -33,7 +40,7 @@ export default function Home() {
                             ease: "easeInOut",
                         },
                     }}
-                    className="bg-stone-900/70 backdrop-blur-md px-3 lg:px-4 py-4 flex flex-col space-y-2 md:space-y-3 h-max rounded-t-lg lg:rounded-b-lg w-full md:w-[438px] justify-end"
+                    className="bg-stone-900/70 backdrop-blur-md px-3 lg:px-4 py-3 flex flex-col space-y-2 md:space-y-3 h-max rounded-t-lg lg:rounded-b-lg w-full md:w-[438px] justify-end"
                 >
                     <h1 className="text-stone-50 text-4xl font-normal">
                         Astryd
