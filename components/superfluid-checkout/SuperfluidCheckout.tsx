@@ -14,8 +14,9 @@ import SuperfluidWidget, {
 import superTokenList from "@superfluid-finance/tokenlist";
 import { useMemo } from "react";
 import ActionItem, { ActionItemProps } from "../ActionItem";
+import { siteConfig } from "@/config/site";
 
-const projectId = "7648cbccc7d7417fcbe198a6ed627c1b";
+const projectId = siteConfig.walletConnectProjectId;
 const { publicClient } = configureChains(supportedNetworks, [
     w3mProvider({ projectId }),
 ]);
